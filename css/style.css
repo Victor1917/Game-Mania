@@ -17,6 +17,7 @@ header {
 .container_grid {
     width: 1718px;
     margin: 0 auto;
+   
 }
     
 .posicionamento_header {
@@ -30,7 +31,6 @@ header {
 .container_grid2 {
     width: 1718px;
     margin: 0 auto;
-  
 }
     
 .posicionamento_header2 {
@@ -61,6 +61,11 @@ header {
     
 }
 
+.barras {
+    display: none;
+}
+
+
 .banner {
     background-image: url(../img/Banner.png);
     height: 602px;
@@ -68,3 +73,55 @@ header {
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (max-width: 1750px){
+    .container_grid {
+        width: 95%;
+    }
+    .container_grid2 {
+         width: 95%;
+     }
+     .menu a {
+         font-size: 16px;
+     }
+    .logo {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container_grid {
+        width: 90%;
+    }
+    .container_grid2 {
+         width: 90%;
+     }
+     .menu a {
+        font-size: 16px;
+        text-align: center;
+        padding: 15px;
+    }
+    .logo  {
+        width: 90%;
+    }
+    .barras {
+        display: inline-block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background-color: rgba(0, 117, 117, 0.65);
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .posicionamento_header {
+        position: relative;
+    }
+    .posicionamento_header2{
+        position: relative;
+    }
+}
+
